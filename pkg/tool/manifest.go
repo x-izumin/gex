@@ -3,7 +3,7 @@ package tool
 import (
 	"sort"
 
-	"github.com/izumin5210/gex/pkg/manager"
+	"github.com/x-izumin/gex/pkg/manager"
 )
 
 // Manifest contains tool list

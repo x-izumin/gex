@@ -5,9 +5,9 @@ import (
 	"go/token"
 	"strconv"
 
-	"github.com/izumin5210/gex/pkg/manager"
 	"github.com/pkg/errors"
 	"github.com/spf13/afero"
+	"github.com/x-izumin/gex/pkg/manager"
 )
 
 // Parser retrieve tool packages from given paths.

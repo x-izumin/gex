@@ -5,7 +5,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/izumin5210/gex/pkg/manager"
+	"github.com/x-izumin/gex/pkg/manager"
 )
 
 // NewManager creates a manager.Interface instance to build tools vendored with Modules.

@@ -12,7 +12,7 @@ import (
 	"github.com/izumin5210/execx"
 	"github.com/spf13/afero"
 
-	"github.com/izumin5210/gex/pkg/manager"
+	"github.com/x-izumin/gex/pkg/manager"
 )
 
 func TestDetectType(t *testing.T) {

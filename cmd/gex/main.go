@@ -8,10 +8,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/izumin5210/gex"
-	"github.com/izumin5210/gex/pkg/tool"
 	"github.com/pkg/errors"
 	"github.com/spf13/pflag"
+	"github.com/x-izumin/gex"
+	"github.com/x-izumin/gex/pkg/tool"
 )
 
 const (
@@ -83,7 +83,7 @@ func run() error {
 		}
 		return err
 	case flagInit:
-		err = toolRepo.Add(ctx, "github.com/izumin5210/gex/cmd/gex")
+		err = toolRepo.Add(ctx, "github.com/x-izumin/gex/cmd/gex")
 	case flagRegen:
 		path := filepath.Join(cfg.RootDir, cfg.ManifestName)
 		m, err := tool.NewParser(cfg.FS, cfg.ManagerType).Parse(path)

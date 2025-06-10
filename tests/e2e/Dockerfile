@@ -5,7 +5,7 @@ FROM golang:$GO_VERSION-alpine as builder
 
 ENV GO111MODULE=on
 RUN apk add -U --no-cache curl build-base git
-WORKDIR /go/src/github.com/izumin5210/gex
+WORKDIR /go/src/github.com/x-izumin/gex
 COPY . .
 
 RUN GO111MODULE=on go install ./cmd/gex
