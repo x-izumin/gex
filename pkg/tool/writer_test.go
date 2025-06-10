@@ -6,8 +6,8 @@ import (
 	"github.com/bradleyjkemp/cupaloy/v2"
 	"github.com/spf13/afero"
 
-	"github.com/izumin5210/gex/pkg/manager"
-	"github.com/izumin5210/gex/pkg/tool"
+	"github.com/x-izumin/gex/pkg/manager"
+	"github.com/x-izumin/gex/pkg/tool"
 )
 
 func TestWriter_Write(t *testing.T) {

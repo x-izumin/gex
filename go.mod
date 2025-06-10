@@ -1,4 +1,4 @@
-module github.com/izumin5210/gex
+module github.com/x-izumin/gex
 
 go 1.11
 

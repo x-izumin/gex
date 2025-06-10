@@ -3,7 +3,7 @@
 package main
 
 import (
-	"github.com/izumin5210/gex/pkg/tool"
+	"github.com/x-izumin/gex/pkg/tool"
 )
 
 func asBuildErrors(err error) *tool.BuildErrors {

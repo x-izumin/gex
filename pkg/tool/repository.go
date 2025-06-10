@@ -7,7 +7,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/izumin5210/gex/pkg/manager"
+	"github.com/x-izumin/gex/pkg/manager"
 )
 
 // Repository is an interface for managing and operating tools

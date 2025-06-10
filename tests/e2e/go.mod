@@ -1,4 +1,4 @@
-module github.com/izumin5210/gex/tests/e2e
+module github.com/x-izumin/gex/tests/e2e
 
 go 1.13
 
