@@ -79,7 +79,7 @@ func invokeE2ETest(t *testing.T, tm TestMode) {
 	})
 
 	t.Run("add tools with version specification", func(t *testing.T) {
-		const gexVersion = "0.5.1"
+		const gexVersion = "0.7.0"
 		tc.ExecCmd(t, gexCmd, "--add", "github.com/x-izumin/gex/cmd/gex@v"+gexVersion)
 		tc.SnapshotManifest(t)
 
