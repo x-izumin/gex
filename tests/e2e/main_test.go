@@ -80,13 +80,14 @@ func invokeE2ETest(t *testing.T, tm TestMode) {
 
 	t.Run("add tools with version specification", func(t *testing.T) {
 		const gexVersion = "0.7.0"
+		const gexSkewVersion = "0.6.1"
 		tc.ExecCmd(t, gexCmd, "--add", "github.com/x-izumin/gex/cmd/gex@v"+gexVersion)
 		tc.SnapshotManifest(t)
 
 		var outW, errW bytes.Buffer
 		tc.ExecCmdWithOut(t, tc.Bin("gex"), []string{"--version"}, &outW, &errW)
 
-		if got, want := outW.String(), gexVersion; !strings.Contains(got, want) {
+		if got, want := outW.String(), gexSkewVersion; !strings.Contains(got, want) {
 			t.Errorf("`bin/gex --version` prints %q, want to contain %q", got, want)
 		}
 	})
