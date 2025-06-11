@@ -1,14 +1,39 @@
+version: "2"
 output:
-  format: colored-line-number
-
-linters-settings:
-  lll:
-    line-length: 140
-
+  formats:
+    text:
+      path: stdout
+      color: true
 linters:
-  enable-all: true
+  default: all
   disable:
     - gochecknoglobals
     - gochecknoinits
-    - gomnd
+    - mnd
     - wsl
+  settings:
+    lll:
+      line-length: 140
+  exclusions:
+    generated: lax
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
+formatters:
+  enable:
+    - gci
+    - gofmt
+    - gofumpt
+    - goimports
+  exclusions:
+    generated: lax
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
