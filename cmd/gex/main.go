@@ -8,10 +8,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/izumin5210/gex"
-	"github.com/izumin5210/gex/pkg/tool"
 	"github.com/pkg/errors"
 	"github.com/spf13/pflag"
+	"github.com/x-izumin/gex"
+	"github.com/x-izumin/gex/pkg/tool"
 )
 
 const (

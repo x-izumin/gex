@@ -1,5 +1,9 @@
 package gex
 
+import (
+	newGex "github.com/x-izumin/gex"
+)
+
 const (
-	Version = "0.6.1"
+	Version = newGex.Version
 )
