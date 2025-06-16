@@ -1,3 +1,4 @@
+// Deprecated: use github.com/x-izumin/gex instead.
 module github.com/izumin5210/gex
 
 go 1.11
